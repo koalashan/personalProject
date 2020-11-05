@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>讀旅 - 詳細內容</title>
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./vendors/swiper/css/swiper.css">
+    <link rel="icon" href="./images/_previmg.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/scrollHeader.js"></script>
+  </head>
+
+  <body>
+    <div id="container" style="display: none;">
+      <div class="frame">
+        <div class="nav">
+          <ul class="links">
+            <li class="signin-active"><a class="btn">登入</a></li>
+            <li class="signup-inactive"><a class="btn">註冊</a></li>
+          </ul>
+        </div>
+        <div ng-app ng-init="checked = false">
+          <form class="form-signin" action="" method="post" name="form">
+            <label for="username">帳號</label>
+            <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+            <label for="password">密碼</label>
+            <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+            <div class="btn-wrap">
+              <div class="btn-animate">
+                <a class="btn-signin-cancel">取消</a>
+              </div>
+              <div class="btn-animate">
+                <a href="#" class="btn-signin">確認</a>
+              </div>
+            </div>
+          </form>
+            
+            <form class="form-signup" action="" method="post" name="form">
+              <label for="fullname">輸入姓名</label>
+              <input class="form-styling" type="text" name="fullname" placeholder=""/>
+              <label for="email">輸入信箱</label>
+              <input class="form-styling" type="text" name="email" placeholder=""/>
+              <label for="password">輸入密碼</label>
+              <input class="form-styling" type="password" name="password" placeholder=""/>
+              <label for="confirmpassword">再次確認密碼</label>
+              <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+              <div class="btn-wrap">
+                <div class="btn-animate">
+                  <a class="btn-signin-cancel signupCancel">取消</a>
+                </div>
+                <div class="btn-animate">
+                  <a ng-click="checked = !checked" class="btn-signup">確認送出</a>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html" class="logo">讀旅</a>
+        </div>
+        
+        <nav id="nav">
+          <div id="menu_toggle">
+            <input type="checkbox">
+            <ul class="nav">
+              <li class="browse"><a href="./intro.html">選錄旅書</a></li>
+              <li class="about"><a href="./about.html">關於我們</a></li>
+              <li class="login">
+                <span id="spanLogin">會員登入</span>
+              </li>
+            </ul>
+            <span></span>
+            <span></span>
+            <span></span> 
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="top">
+        <div class="banner">
+          <div class="title_wrap">
+              <h2>在田中央</h2>
+              <h3>: 地景、建物、人與河的融合</h3>
+          </div>
+
+          <!-- <div class="tags">
+              <span>#tag</span>
+              <span>#tag</span>
+          </div> -->
+
+          <div class="back">
+            <img src="./images/page_back.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/page_caro_img.jpg"></div>
+            <div class="swiper-slide"><img src="./images/page_caro_img02.jpg"></div>
+            <div class="swiper-slide"><img src="./images/page_caro_img03.jpg"></div>
+            <div class="swiper-slide"><img src="./images/page_caro_img04.jpg"></div>
+            <div class="swiper-slide"><img src="./images/page_caro_img05.jpg"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- <div class="bt_wrap">
+          <span class="favor">收藏</span>
+          <span class="add">加入旅冊</span>
+        </div> -->
+      </div>
+
+      <div id="main_content">
+        <div class="intro_wrap">
+          <div class="intro_img">
+            <img src="./images/page_img_book.jpg" alt="">
+          </div>
+          <div class="intro">
+            <h2>在田中央：宜蘭的青春 / 建築的場所 /  島嶼的線條</h2>
+            <p>
+              選擇長期定居在宜蘭過活與工作，這群建築師同時是居民，以及專業者；二十多年來蔓生而出一大片開放的、從小步道至大橋樑的公共建築群。
+              <br><br>
+              「把這裡當作家園，能做什麼就做什麼，暫時做不到的就放在心裡等待，能做也要故意留下一些空白。」—黃聲遠
+            </p>
+            <span class="more">more</span>
+          </div>
+        </div>
+
+        <div class="list_wrap">
+          <div class="list">
+            <h2>{ 精選周邊店家 }</h2>
+            <ul class="list">
+              <li>開始：器皿</li>
+              <p>位於河岸邊的手作陶藝工作室，<br>也可以內用咖啡、欣賞河景。</p>
+              <li class="cafe">鳴草咖啡</li>
+              <p>自家烘培咖啡，特色單人手沖教學<br>組合，有機會遇到店貓們。</p>
+            </ul>
+          </div>
+          <div class="list_img">
+            <img src="./images/page_route_map.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="next_page">
+        <a href="store.html">NEXT PAGE</a>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="cr_nav">
+          <nav class="bottom">
+            <ul class="bottom">
+              <li class="bottom_intro"><a href="./intro.html">→說明頁</a></li>
+              <li class="bottom_browse"><a href="./browse.html">→開始選擇</a></li>
+              <li class="bottom_about"><a href="./about.html">→關於我們</a></li>
+            </ul>
+          </nav>
+          <p>copyright &copy; 2020 Dulü TW.</p>
+        </div>
+        
+        <div class="ic_top">
+          <div class="icon">
+            <a href="#" class="medium"><img src="./images/icon_md_gr.svg" class="medium" alt=""></a>
+            <a href="#" class="ig"><img src="./images/icon_ig_gr.svg" class="ig" alt=""></a>
+            <a href="#" class="fb"><img src="./images/icon_fb_gr.svg" class="fb" alt=""></a>
+          </div>
+  
+          <div class="to_top">
+            <a href="#top">↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./vendors/swiper/js/swiper.js"></script>
+    <script src="./js/swiper_custom.js"></script>
+  </body>
+
+</html>

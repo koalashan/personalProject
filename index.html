@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>讀旅 - 首頁</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/_previmg.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+  </head>
+
+  <body>
+    <div id="container" style="display: none;">
+      <div class="frame">
+        <div class="nav">
+          <ul class="links">
+            <li class="signin-active"><a class="btn">登入</a></li>
+            <li class="signup-inactive"><a class="btn">註冊</a></li>
+          </ul>
+        </div>
+        <div ng-app ng-init="checked = false">
+          <form class="form-signin" action="" method="post" name="form">
+            <label for="username">帳號</label>
+            <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+            <label for="password">密碼</label>
+            <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+            <div class="btn-wrap">
+              <div class="btn-animate">
+                <a class="btn-signin-cancel">取消</a>
+              </div>
+              <div class="btn-animate">
+                <a href="#" class="btn-signin">確認</a>
+              </div>
+            </div>
+          </form>
+            
+            <form class="form-signup" action="" method="post" name="form">
+              <label for="fullname">輸入姓名</label>
+              <input class="form-styling" type="text" name="fullname" placeholder=""/>
+              <label for="email">輸入信箱</label>
+              <input class="form-styling" type="text" name="email" placeholder=""/>
+              <label for="password">輸入密碼</label>
+              <input class="form-styling" type="password" name="password" placeholder=""/>
+              <label for="confirmpassword">再次確認密碼</label>
+              <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+              <div class="btn-wrap">
+                <div class="btn-animate">
+                  <a class="btn-signin-cancel signupCancel">取消</a>
+                </div>
+                <div class="btn-animate">
+                  <a ng-click="checked = !checked" class="btn-signup">確認送出</a>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html" class="logo">讀旅</a>
+        </div>
+        
+        <nav id="nav">
+          <div id="menu_toggle">
+            <input type="checkbox">
+            <ul class="nav">
+              <li class="browse"><a href="./intro.html">選錄旅書</a></li>
+              <li class="about"><a href="./about.html">關於我們</a></li>
+              <li class="login">
+                <span id="spanLogin">會員登入</span>
+              </li>
+            </ul>
+            <span></span>
+            <span></span>
+            <span></span> 
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="top">
+        <div class="banner">
+          <div style="background-image: url('./images/index_banner_1520x1013.jpg')"></div>
+          <div style="background-image: url('./images/index_banner_02.jpg')"></div>
+          <div style="background-image: url('./images/index_banner_05.jpg')"></div>
+          <div style="background-image: url('./images/index_banner_03.jpg')"></div>
+          <div style="background-image: url('./images/index_banner_01.jpg')"></div>
+        </div>
+        <div class="top_con">
+          <div class="btn_strt">
+            <a href="./intro.html" class="btn_strt">
+              <span class="strt">START<br>NOW</span>
+            </a>
+          </div>
+
+          <div class="desc">
+            <p><br><br>— 製作你的旅冊 ─</p>
+          </div>
+
+          <div class="para">
+            <p>走進世界，也離開世界。<br>旅途中的停歇、放空，打發時間最好的，就是帶一本書。</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="footer">
+        <div class="logo">
+          <a href="/" class="logo">讀旅</a>
+        </div>
+        <nav class="bottom">
+          <ul class="bottom">
+            <li class="bottom_browsing"><a href="./intro.html">選錄旅書</a></li>
+            <li class="bottom_store_list"><a href="./stores.html">精選店家</a></li>
+            <li class="bottom_audio"><a href="./audio.html">聽書讀景</a></li>
+            <li class="bottom_about"><a href="./about.html">關於我們</a></li>
+            <li class="bottom_my_book"><a href="./mybook.html">我的旅冊</a></li>
+          </ul>
+        </nav>
+
+        <div class="icon">
+          <a href="#" class="medium"><img src="./images/icon_medium_29x21.png" class="medium" alt=""></a>
+          <a href="#" class="ig"><img src="./images/icon_ig_27x27.png" class="ig" alt=""></a>
+          <a href="#" class="fb"><img src="./images/icon_fb_25x25.png" class="fb" alt=""></a>
+        </div>
+      </div>
+
+      <div class="to_top">
+        <a href="#top">↑</a>
+      </div>
+    </footer> -->
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+header#header{
+    background-color: #fff;
+    opacity: .9;
+    box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
+}
+div.wrapper div.logo > a{
+    background-image: url("../../images/logo_g_143x54.svg");
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
+    color: #9e9e9e;
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
+    border: 1px solid #9e9e9e;
+    color: #9e9e9e;
+}

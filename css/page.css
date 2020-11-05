@@ -1,0 +1,185 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
+    color: hsla(60, 100%, 40%, 1);
+}
+main.main{
+    /* border: 1px solid blue; */
+}
+div#top div.banner{
+    /* border: 1px solid red; */
+    background: url("../images/page_banner_1519x677.jpg") no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 70vh;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+div#top div.banner div.title_wrap{
+    /* border: 1px solid blueviolet; */
+    width: 75%;
+    margin: 0 auto;
+}
+div#top div.banner div.title_wrap h2{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+}
+div#top div.banner div.title_wrap h3{
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    margin: 5px 0 0 8px;
+}
+/* div#top div.banner div.tags{
+    border: 1px solid orange;
+    display: inline-block;
+    position: absolute;
+    left: 190px;
+    bottom: 40px;
+} */
+/* div#top div.banner div.tags span{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 10px;
+} */
+div#top div.banner div.back{
+    width: 100%;
+}
+div#top div.banner div.back img{
+    border: 1px solid GoldenRod;
+    position: absolute;
+    bottom: -12%;
+    left: 10%;
+    opacity: 70%;
+}
+div.swiper-container{
+    /* border: 1px solid purple; */
+    width: 75%;
+    height: 60vh;
+    margin: 180px auto;
+    text-align: center;
+    position: relative;
+}
+div.swiper-container::before{
+    content: "";
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 35%;
+    height: 90px;
+    background-image: url("../images/page_deco_460x104.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding-top: 10%; */
+    position: absolute;
+    bottom: -1%;
+    right: -1%;
+    z-index: 2;
+}
+div.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#main_content{
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 75%;
+    /* min-width: 1200px; */
+}
+div#main_content div.intro_wrap div.intro{
+    border: 1px solid darkorange;
+    width: 50%;
+    display: inline-block;
+    margin-top: 10px;
+}
+div#main_content div.intro_wrap div.intro span.more{
+    border: 1px solid hsla(60, 20%, 75%, 1);
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    color: hsla(60, 20%, 75%, 1);
+    font-size: 1.6rem;
+    padding: 8px 20px;
+    margin: 30px 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    letter-spacing: 0.2rem;
+}
+div#main_content div.intro_wrap div.intro_img{
+    /* border: 1px solid cyan; */
+    display: inline-block;
+}
+div#main_content h2{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: hsla(155, 100%, 32%, 1);
+    display: block;
+    letter-spacing: 0.25rem
+}
+div#main_content div.intro_wrap div.intro p{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    padding-left: 12px;
+    line-height: 2;
+    letter-spacing: 0.2rem;
+    color: hsla(57, 9%, 61%, 1);
+}
+div#main_content div.list_wrap{
+    border: 1px solid orange;
+    margin: 100px 0 200px 0;
+    display: flex;
+}
+div#main_content div.list_wrap div.list, div.list_img{
+    border: 1px solid olive;
+    display: inline-block;
+}
+div#main_content div.list_wrap div.list{
+    border: 1px solid green;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    line-height: 2;
+    width: 39%;
+    display: inline-block;
+    /* float: left; */
+    margin: 10px 20px 0 45px;
+}
+div#main_content div.list_wrap div.list ul{
+    margin-left: 20px;
+}
+div#main_content div.list_wrap div.list ul > li{
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    color: hsla(57, 9%, 61%, 1)
+}
+div#main_content div.list_wrap div.list ul > p{
+    font-size: 1.6rem;
+    color: hsla(60, 20%, 75%, 1);
+    line-height: 1.7;
+    margin-top: 10px;
+}
+div#next_page{
+    text-align: center;
+    margin: 80px 0;
+}
+div#next_page > a{
+    width: 200px;
+    height: 55px;
+    border: 2px solid hsla(60, 100%, 40%, 1);
+    border-radius: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: hsla(60, 100%, 40%, 1);
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+}

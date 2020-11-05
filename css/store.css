@@ -1,0 +1,196 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
+    color: hsla(60, 100%, 40%, 1);
+}
+main#main{
+    /* border: 1px solid aquamarine; */
+}
+div#top{
+    /* border: 1px solid goldenrod; */
+}
+div#top div.banner{
+    background-image: url("../images/stores_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+div#top div.banner div.title_wrap{
+    /* border: 1px solid cyan; */
+    width: 75%;
+    margin: 0 auto;
+}
+div#top div.banner div.title_wrap h2{
+    font-size: 3.2rem;
+    color: #fff;
+}
+div#tab_container{
+    /* border: 1px solid blue; */
+    max-width: 80%;
+    margin: 80px auto;
+}
+div#tab_container div.tab_list_block{
+    /* border: 1px solid goldenrod; */
+    /* padding-left: 10px; */
+}
+div#tab_container div.tab_list_block ul.tab_list{
+    /* border: 1px solid salmon; */
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+div#tab_container div.tab_list_block ul.tab_list > li{
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+div#tab_container div.tab_list_block ul.tab_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    /* border: 1px solid #ccc; */  /* 上方頁籤框線 */
+    /* border-bottom: 1px solid black; */
+    padding: 10px 30px;  /* 頁籤寬高 */
+    margin-right: 2px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    background-color: #fff;
+    box-shadow: 4px -4px 15px -6px rgba(0, 0, 0, .1);
+    position: relative;
+    top: 1px;
+}
+/* div#tab_container div.tab_list_block ul.tab_list > li > a{
+    color: hsla(60, 100%, 40%, 1);
+    transition: all 0.2s ease-out 0s;
+} */
+div#tab_container div.tab_list_block ul.tab_list > li > a.-on{
+    /* .-on時的上方頁籤框線 */
+    color: hsla(60, 20%, 75%, 1);
+}
+/* div#tab_container div.tab_list_block ul.tab_list > li > a::after{
+    content: "a";
+    position: absolute;
+    width: calc(100%);
+    height: 0px;
+    border: 1px solid darkorange;
+    background-color: 1px solid black;
+    bottom: -1px;
+    left: -1px;
+    z-index: 1;
+} */
+/* div#tab_container div.tab_list_block ul.tab_list > li > a.-on::after{
+    background-color: 1px solid rgb(209, 253, 47);
+    width: 100%;
+    left: 0px;
+} */
+div#tab_container div.tab_content{
+    /* border: 1px solid royalblue; */
+    box-shadow: 0px 1px 24px 0px hsla(0, 0%, 60%, .25);
+}
+div#tab_container div.tab_content div.tab{
+    /* padding: 100px; */
+    display: none;
+}
+div#tab_container div.tab_content div.tab.-on{
+    display: block;
+}
+div#tab_container div.tab_content div.tab div.row{
+    /* border: 1px solid saddlebrown; */
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div#tab_container div.tab_content div.tab1{
+    /* border: 1px solid green; */
+}
+div#tab_container div.tab_content div.tab div.row > a{
+    /* border: 1px solid aqua; */
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    text-decoration: none;
+    color: hsla(57, 9%, 61%, 1);
+}
+div#tab_container div.tab_content div.tab div.row > a > div.info{
+    /* border: 1px solid blue; */
+    text-align: center;
+    /* position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+div#tab_container div.tab_content div.tab div.row > a > div.info > p{
+    color: hsla(57, 9%, 61%, 1);
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    margin-top: 12px;
+}
+div#tab_container div.tab_content div.tab div.row > a > img {
+    border-radius: 50%;
+}
+div#tab_container div.more_btn{
+    /* border: 1px solid salmon; */
+    text-align: center;
+    padding: 50px 0 80px 0;
+}
+div#tab_container div.more_btn button{
+    border: 1px solid hsla(60, 20%, 75%, 1);
+    outline: none;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 13%;
+    color: hsla(60, 20%, 75%, 1);
+    margin: 0 auto;
+    padding: 14px 0;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+}
+div#map{
+    /* border: 1px solid blue; */
+    max-width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+div#map h2{
+    font-size: 2.3rem;
+    color: hsla(57, 9%, 61%, 1);
+    letter-spacing: 0.4rem;
+}
+div#map div.map_embed{
+    margin-top: 30px;
+}
+div#next_page{
+    text-align: center;
+    margin: 80px 0;
+}
+div#next_page > a{
+    width: 155px;
+    height: 55px;
+    border: 2px solid hsla(60, 100%, 40%, 1);
+    border-radius: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: hsla(60, 100%, 40%, 1);
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+}

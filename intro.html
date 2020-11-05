@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>讀旅 - 說明畫面</title>
+<link rel="stylesheet" href="./css/intro.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="icon" href="./images/tlogo_g.svg" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/browse.js"></script>
+
+</head>
+<body>
+  <div id="container" style="display: none;">
+    <div class="frame">
+      <div class="nav">
+        <ul class="links">
+          <li class="signin-active"><a class="btn">登入</a></li>
+          <li class="signup-inactive"><a class="btn">註冊</a></li>
+        </ul>
+      </div>
+      <div ng-app ng-init="checked = false">
+        <form class="form-signin" action="" method="post" name="form">
+          <label for="username">帳號</label>
+          <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+          <label for="password">密碼</label>
+          <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+          <div class="btn-wrap">
+            <div class="btn-animate">
+              <a class="btn-signin-cancel">取消</a>
+            </div>
+            <div class="btn-animate">
+              <a href="#" class="btn-signin">確認</a>
+            </div>
+          </div>
+        </form>
+          
+          <form class="form-signup" action="" method="post" name="form">
+            <label for="fullname">輸入姓名</label>
+            <input class="form-styling" type="text" name="fullname" placeholder=""/>
+            <label for="email">輸入信箱</label>
+            <input class="form-styling" type="text" name="email" placeholder=""/>
+            <label for="password">輸入密碼</label>
+            <input class="form-styling" type="password" name="password" placeholder=""/>
+            <label for="confirmpassword">再次確認密碼</label>
+            <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+            <div class="btn-wrap">
+              <div class="btn-animate">
+                <a class="btn-signin-cancel signupCancel">取消</a>
+              </div>
+              <div class="btn-animate">
+                <a ng-click="checked = !checked" class="btn-signup">確認送出</a>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <header id="header">
+    <div class="wrapper">
+      <div class="logo">
+        <a href="./index.html" class="logo">讀旅</a>
+      </div>
+      
+      <nav id="nav">
+        <div id="menu_toggle">
+          <input type="checkbox">
+          <ul class="nav">
+            <li class="browse"><a href="./intro.html">選錄旅書</a></li>
+            <li class="about"><a href="./about.html">關於我們</a></li>
+            <li class="login">
+              <span id="spanLogin">會員登入</span>
+            </li>
+          </ul>
+          <span></span>
+          <span></span>
+          <span></span> 
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <div id="make">
+      <div class="title_make" data-aos="fade-up">
+        <!-- decorate_element -->
+        <h2>
+          我們提供『一書一路線』的設計組合，<br>
+          推薦你拋開以往的思維，透過選擇一本書去決定這趟旅程。
+        </h2>
+      </div>
+
+        <div class="wrap">
+          <div class="make step01">
+            <img src="./images/step01.svg" class="icon01" alt="">
+            <p class="text01">挑選喜歡的書或路線</p>
+          </div>
+          <div class="arrow"></div>
+          <div class="make step02">
+            <img src="./images/step02.svg" class="icon02" alt="">
+            <p class="text02">收集想去的周邊店家</p>
+          </div>
+          <div class="arrow"></div>
+          <div class="make step03">
+            <img src="./images/step03.svg" class="icon03" alt="">
+            <p class="text03">完成一本你的旅冊</p>
+          </div>
+        </div>
+    </div>
+
+    <div id="browse">
+      <div class="wrap">
+        <div class="slider">
+          <div class="slider_viewer">
+            <div class="slide_group">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+          </div>
+
+          <div class="title_browse">
+            <h2 class="browse">選錄旅書</h2>
+          </div> 
+
+        </div>
+
+        <div class="slide_buttons"></div>
+        <div class="contex_para">
+          <p class="para01">
+            橋下的大卡車轟隆隆急馳而過，在亮晃晃的陽光下，我聽見了另一個聲音。
+            <br>
+            那是社福館的混聲合唱，它正穿越這座橋，親切地與宜蘭河潺潺的流水唱和。
+            <br>
+            — 《在田中央》
+          </p>
+        </div>
+
+        <div class="directional_nav">
+          <!-- 控制左右btns -->
+          <div class="previous_btn">
+            <span class="pre"></span>
+          </div>
+          <div class="next_btn">
+            <span class="nxt"></span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="bt_browse_page">
+        <img src="./images/index_deco_line_left.svg" class="deco_left" alt="">
+        <a href="./browse.html" class="bt_browse_page">前往選書</a>
+        <img src="./images/index_deco_line_right.svg" class="deco_right" alt="">
+      </div> -->
+    </div>
+
+    <div id="para_area">
+      <div class="para">
+        <p class="quot_left">“</p>
+        <p class="main_para">
+          旅行，關閉超載的資訊來源：手機，安靜下來。
+          <br><br>
+          不總在找午餐時打開google；不在踏入店家前，
+          <br>
+          先停下腳步查看評價；不直勾勾地盯著導航，
+          <br>
+          而忽略了瞬息景象。
+          <br><br>
+          希望旅行時，我們能脫離快速流動的世界，
+          <br>
+          回歸網路資訊不是那麼足夠，卻不匱乏的狀態，
+          <br>
+          專注於當下。
+          <br><br>
+          然而，旅途中的乘車、停歇、放空，
+          <br>
+          打發時間最容易的，就是帶一本書。
+        </p>
+        <!-- <p class="quot_right">”</p> -->
+      </div>
+
+      <div class="img_area" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-out-sine">
+        <img src="./images/index_walking_girl.jpg" class="sentence_img" alt="">
+        <p class="sentence">hey, take yourself away from the world.</p>
+      </div>
+    </div>
+
+    <div id="comment" data-aos="fade-up">
+      <div class="title_comment">
+        <h2 class="comment">旅人評論</h2>
+        <!-- decorate_element -->
+      </div>
+
+      <div class="card">
+        <div class="wrap">
+          <div class="comme_avatar01">
+            <img src="./images/comme_avatar01.jpg" class="avatar01" alt="">
+          </div>
+
+          <div class="comme_para01">
+            <p class="comme">
+            不一樣的旅行模式，覺得十分充實，認識不同的人，
+            <br>
+            不只了解土地的故事，也更親近這片土地的人事物，很溫暖。
+            </p>
+            <p class="name">
+            旅人 Andrew
+            </p>
+          </div>
+
+          <!-- <div class="dot">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div> -->
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="bt_make">
+      <a href="./browse.html" class="bt_make">出發</a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="wrapper">
+      <div class="cr_nav">
+        <nav class="bottom">
+          <ul class="bottom">
+            <li class="bottom_intro"><a href="./intro.html">→說明頁</a></li>
+            <li class="bottom_browse"><a href="./browse.html">→開始選擇</a></li>
+            <li class="bottom_about"><a href="./about.html">→關於我們</a></li>
+          </ul>
+        </nav>
+        <p>copyright &copy; 2020 Dulü TW.</p>
+      </div>
+      
+      <div class="ic_top">
+        <div class="icon">
+          <a href="#" class="medium"><img src="./images/icon_md_gr.svg" class="medium" alt=""></a>
+          <a href="#" class="ig"><img src="./images/icon_ig_gr.svg" class="ig" alt=""></a>
+          <a href="#" class="fb"><img src="./images/icon_fb_gr.svg" class="fb" alt=""></a>
+        </div>
+
+        <div class="to_top">
+          <a href="#top">↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

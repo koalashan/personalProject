@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>讀旅 - 精選店家</title>
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="icon" href="./images/_previmg.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/store_tab.js"></script>
+    <script src="./js/scrollHeader.js"></script>
+  </head>
+  <body>
+    <div id="container" style="display: none;">
+      <div class="frame">
+        <div class="nav">
+          <ul class="links">
+            <li class="signin-active"><a class="btn">登入</a></li>
+            <li class="signup-inactive"><a class="btn">註冊</a></li>
+          </ul>
+        </div>
+        <div ng-app ng-init="checked = false">
+          <form class="form-signin" action="" method="post" name="form">
+            <label for="username">帳號</label>
+            <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+            <label for="password">密碼</label>
+            <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+            <div class="btn-wrap">
+              <div class="btn-animate">
+                <a class="btn-signin-cancel">取消</a>
+              </div>
+              <div class="btn-animate">
+                <a href="#" class="btn-signin">確認</a>
+              </div>
+            </div>
+          </form>
+            
+            <form class="form-signup" action="" method="post" name="form">
+              <label for="fullname">輸入姓名</label>
+              <input class="form-styling" type="text" name="fullname" placeholder=""/>
+              <label for="email">輸入信箱</label>
+              <input class="form-styling" type="text" name="email" placeholder=""/>
+              <label for="password">輸入密碼</label>
+              <input class="form-styling" type="password" name="password" placeholder=""/>
+              <label for="confirmpassword">再次確認密碼</label>
+              <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+              <div class="btn-wrap">
+                <div class="btn-animate">
+                  <a class="btn-signin-cancel signupCancel">取消</a>
+                </div>
+                <div class="btn-animate">
+                  <a ng-click="checked = !checked" class="btn-signup">確認送出</a>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html" class="logo">讀旅</a>
+        </div>
+        
+        <nav id="nav">
+          <div id="menu_toggle">
+            <input type="checkbox">
+            <ul class="nav">
+              <li class="browse"><a href="./intro.html">選錄旅書</a></li>
+              <li class="about"><a href="./about.html">關於我們</a></li>
+              <li class="login">
+                <span id="spanLogin">會員登入</span>
+              </li>
+            </ul>
+            <span></span>
+            <span></span>
+            <span></span> 
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="top">
+        <div class="banner">
+          <div class="title_wrap">
+            <h2>精選店家</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab_container">
+        <div class="tab_list_block">
+          <ul class="tab_list">
+            <li><a href="#" data-target="tab1" class="tab -on">特色小店</a></li>
+            <li><a href="#" data-target="tab2" class="tab">道地美食</a></li>
+            <li><a href="#" data-target="tab3" class="tab">質感住宿</a></li>
+          </ul>
+        </div>
+
+        <div class="tab_content">
+          <div class="tab tab1 -on">
+            <div class="row">
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+  
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="tab tab2">
+            <div class="row">
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+  
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="tab tab3">
+            <div class="row">
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛散步咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img01.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#老宅改裝小店</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛鳴草咖啡｝</h2>
+                  </div>
+                  <img src="./images/stores_img02.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#自家烘培手沖</p>
+                  </div>
+                </a>
+                <a href="#" class="linkpage">
+                  <div class="info">
+                    <h2>｛美美子｝</h2>
+                  </div>
+                  <img src="./images/stores_img03.jpg" class="res" alt="">
+                  <div class="info">
+                    <p>#手作雞蛋糕</p>
+                  </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="more_btn">
+            <button type="button" name="more">more</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="map">
+        <h2>小店串連地圖</h2>
+        <div class="map_embed">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9195.963855351898!2d121.74819532451986!3d24.75551418281547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1602442031380!5m2!1szh-TW!2stw" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+      <div id="next_page">
+        <a href="./done.html">完成</a>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="cr_nav">
+          <nav class="bottom">
+            <ul class="bottom">
+              <li class="bottom_intro"><a href="./intro.html">→說明頁</a></li>
+              <li class="bottom_browse"><a href="./browse.html">→開始選擇</a></li>
+              <li class="bottom_about"><a href="./about.html">→關於我們</a></li>
+            </ul>
+          </nav>
+          <p>copyright &copy; 2020 Dulü TW.</p>
+        </div>
+        
+        <div class="ic_top">
+          <div class="icon">
+            <a href="#" class="medium"><img src="./images/icon_md_gr.svg" class="medium" alt=""></a>
+            <a href="#" class="ig"><img src="./images/icon_ig_gr.svg" class="ig" alt=""></a>
+            <a href="#" class="fb"><img src="./images/icon_fb_gr.svg" class="fb" alt=""></a>
+          </div>
+  
+          <div class="to_top">
+            <a href="#top">↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("a.tab").on("click", function(e){
+          e.preventDefault();
+          
+          /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+          $(this).closest("ul").find("a.tab").removeClass("-on");
+          $(this).addClass("-on");
+          
+          /* 找到對應的頁籤內容，加上 -on 來顯示 */
+          $("div.tab").removeClass("-on");
+          $("div.tab." + $(this).attr("data-target")).addClass("-on");
+        });
+      });
+    </script>
+  </body>
+</html>

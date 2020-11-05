@@ -1,0 +1,79 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(2) > a{
+    color: hsla(60, 100%, 40%, 1);
+}
+main#main{
+    /* border: 1px solid blue; */
+    min-width: 79%;
+    margin: 0 auto;
+}
+div#top div.banner{
+    /* border: 1px solid red; */
+    background-image: url("../images/about_banner_girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 60vh;
+    /* width: 100%; */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+div#top div.banner div.title_wrap{
+    /* border: 1px solid cyan; */
+    width: 75%;
+    margin: 0 auto;
+    /* padding-top: 18%; */
+}
+div#top div.banner div.title_wrap h2{
+    font-size: 3.2rem;
+    color: #fff;
+}
+div#content div.text_ab, .text_ab2{
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: 50px 0;
+    transition: all 0.6s;
+}
+@media screen and (max-width: 768px){
+    div#content div.text_ab, .text_ab2{
+        margin: 30px 0;
+    }
+}
+div#content div.text_ab h2{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: hsla(155, 100%, 32%, 1);
+    margin: 30px;
+}
+div#content p{
+    font-size: 1.6rem;
+    color: hsla(57, 9%, 61%, 1);
+    line-height: 1.7;
+    letter-spacing: 0.3rem;
+}
+div#content div.img{
+    /* border: 1px solid gold; */
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    transition: width 1s;
+}
+div#content div.img img{
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    div#content div.img{
+        width: 95%;
+    }
+}
+div.about_logo{
+    text-align: center;
+    margin: 80px 0 150px 0;
+    opacity: 60%;
+}
