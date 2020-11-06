@@ -7,27 +7,49 @@ header#header{
     opacity: .9;
     box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
 }
+@media screen and (max-width: 576px){
+    header#header{
+        opacity: 1;
+    }
+}
 header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
-    color: hsla(60, 100%, 40%, 1);
+    color: #555;
+}
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a::after{
+    width: 6px;
+    height: 6px;
 }
 div.wrapper div.logo > a{
     background-image: url("../../images/logo_g_143x54.svg");
 }
 div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
     color: #9e9e9e;
+    font-weight: 400;
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li > a:hover, div.wrapper nav#nav div#menu_toggle ul.nav > li > span:hover{
+    color: #555;
 }
 div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
     border: 1px solid #9e9e9e;
     color: #9e9e9e;
 }
+div.wrapper nav#nav div#menu_toggle span.ham{
+    background-color: hsla(155, 100%, 32%, 1);
+}
 div#make{
-    /* border: 1px solid red; */
+    border: 1px solid transparent;
     width: 80%;
-    margin: 13% auto;
+    margin: 8% auto;
+    transition: width 1s;
 }
 @media screen and (max-width: 1200px){
     div#make{
         width: 90%;
+    }
+}
+@media screen and (max-width: 992px){
+    div#make{
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){
@@ -65,6 +87,7 @@ div#make div.wrap div.make{
     padding: 20px;
     min-width: 20%;
     display: flex;
+    /* margin: 0 15px; */
     flex-direction: column;
 }
 div#make div.wrap div.arrow{
@@ -75,14 +98,24 @@ div#make div.wrap div.arrow{
     padding: 10px;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 992px){
+    div#make div.wrap div.make ~ div.arrow{
+        transform: scale(0.85);
+    }
+}
 @media screen and (max-width: 768px){
     div#make div.wrap div.make ~ div.arrow{
-        transform: rotate(90deg) scale(0.9);
-        margin: 50px;
+        transform: rotate(90deg) scale(0.8);
+        margin: 35px;
     }
 }
 div#make div.wrap div.make > img{
     /* border: 1px solid slateblue; */
+}
+@media screen and (max-width: 992px){
+    div#make div.wrap div.make > img{
+        max-width: 90%;
+    }
 }
 @media screen and (max-width: 768px){
     div#make div.wrap div.make > img{
@@ -96,6 +129,11 @@ div#make div.wrap div.make > p{
     margin-top: 30px;
     color: hsla(155, 100%, 32%, 1);
 }
+@media screen and (max-width: 992px){
+    div#make div.wrap div.make > p{
+        font-size: 1.6rem;
+    }
+}
 div#browse{
     border: 1px solid transparent;
     /* border: 1px solid blue; */
@@ -103,6 +141,17 @@ div#browse{
     margin: 120px auto;
     display: flex;
     flex-direction: column;
+    transition: width 1s;
+}
+@media screen and (max-width: 1200px){
+    div#browse{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    div#browse{
+        width: 95%;
+    }
 }
 div#browse div.wrap{
     /* border: 1px solid purple; */
@@ -158,6 +207,11 @@ div#browse div.wrap div.slide_buttons{
     /* border: 1px solid seagreen; */
     text-align: center;
 }
+@media screen and (max-width: 880px){
+    div#browse div.wrap div.slide_buttons{
+        text-align: right;
+    }
+}
 /*  動態新增點點 */
 a.slide_btn{
     color: #ccc;
@@ -178,6 +232,11 @@ div#browse div.wrap div.directional_nav{
     top: -455px;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width: 630px){
+    div#browse div.wrap div.directional_nav{
+        display: none;
+    }
 }
 div#browse div.wrap div.directional_nav div.previous_btn{
     /* border: 1px solid gold; */
@@ -217,12 +276,27 @@ div#browse div.wrap div.slider::after{
     z-index: 2;
     pointer-events: none;
 }
+@media screen and (max-width: 576px){
+    div#browse div.wrap div.slider::after{
+        height: 85px;
+    }
+}
 div#browse div.wrap div.slider div.title_browse{
     /* border: 1px solid gold; */
     position: absolute;
     bottom: -4%;
-    left: 8%;
+    left: 90px;
     z-index: 3; 
+}
+@media screen and (max-width: 768px){
+    div#browse div.wrap div.slider div.title_browse{
+        left: 80px;
+    }
+}
+@media screen and (max-width: 576px){
+    div#browse div.wrap div.slider div.title_browse{
+        left: 70px;
+    }
 }
 div#browse div.wrap div.slider div.title_browse h2.browse{
     /* border: 1px solid greenyellow; */
@@ -231,6 +305,16 @@ div#browse div.wrap div.slider div.title_browse h2.browse{
     color: hsla(155, 100%, 32%, 1);
     display: inline-flex;
     font-weight: 500;
+}
+@media screen and (max-width: 768px){
+    div#browse div.wrap div.slider div.title_browse h2.browse{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 500px){
+    div#browse div.wrap div.slider div.title_browse h2.browse{
+        font-size: 2rem;
+    }
 }
 div#browse div.wrap div.slider div.title_browse h2.browse::before{
     content: "";

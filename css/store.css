@@ -2,20 +2,19 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a{
     color: hsla(60, 100%, 40%, 1);
 }
-main#main{
-    /* border: 1px solid aquamarine; */
-}
-div#top{
-    /* border: 1px solid goldenrod; */
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a::after{
+    width: 6px;
+    height: 6px;
 }
 div#top div.banner{
     background-image: url("../images/stores_banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
+    background-attachment: fixed;
     width: 100%;
     min-height: 60vh;
     display: flex;

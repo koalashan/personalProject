@@ -2,17 +2,19 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a{
     color: hsla(60, 100%, 40%, 1);
 }
-main.main{
-    /* border: 1px solid blue; */
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a::after{
+    width: 6px;
+    height: 6px;
 }
 div#top div.banner{
     /* border: 1px solid red; */
     background: url("../images/page_banner_1519x677.jpg") no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-attachment: fixed;
     width: 100%;
     height: 70vh;
     /* position: relative; */

@@ -12,6 +12,11 @@ header#header{
   opacity: .9;
   box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
 }
+@media screen and (max-width: 576px){
+  .-active{
+      opacity: 1;
+  }
+}
 div.wrapper{
   /* border: 1px solid orange; */
   display: flex;
@@ -85,13 +90,35 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#men
   font-size: 1.6rem;
   letter-spacing: 0.5rem;
   font-weight: 300;
+  position: relative;
+  padding: 15px 0;
+  transition: all .5s;
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li > a::after{
+  content: ".";
+  color: transparent;
+  background-color: hsla(60, 100%, 40%, 1);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  transition: all .2s;
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li > a:hover::after{
+  width: 6px;
+  height: 6px;
 }
 .-active div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
   color: #9e9e9e;
+  font-weight: 400;
 }
-div.wrapper nav#nav div#menu_toggle ul.nav > li > a:hover{
-  color: hsla(60, 100%, 40%, 1);
-  transition: all 0.3s ease-out 0s;
+.-active div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a{
+  color: #555;
+  cursor: pointer;
 }
 div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
   border: 1px solid #fff;
@@ -102,23 +129,32 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
   width: 115px;
   height: 45px;
   color: #fff;
+  transition: all .3s;
 }
 .-active div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
   border: 1px solid #9e9e9e;
   color: #9e9e9e;
+}
+div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
+  border: 1.5px solid hsla(60, 100%, 40%, 1);
+  width: 115px;
+  height: 45px;
+  color: hsla(60, 100%, 40%, 1);
+  cursor: pointer;
+}
+.-active div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
+  border: 1px solid #9e9e9e;
+  color: #9e9e9e;
+}
+.-active div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
+  border: 1px solid hsla(60, 100%, 40%, 1);
+  color: hsla(60, 100%, 40%, 1);
 }
 @media screen and (max-width: 576px){
   div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
     border: 1px solid transparent;
     display: inline-block;
   }
-}
-div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
-  border: 1px solid transparent;
-  background-color: hsla(60, 100%, 40%, 1);
-  color: #fff;
-  transition: all 0.3s ease-out 0s;
-  cursor: pointer;
 }
 @media screen and (max-width: 576px){
   div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
@@ -191,7 +227,7 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
     letter-spacing: 0.4rem;
   }
   /* hamburger */
-  div.wrapper nav#nav div#menu_toggle span{
+  div.wrapper nav#nav div#menu_toggle span.ham{
     display: block;
     width: 35px;
     height: 2px;
@@ -203,24 +239,27 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
     transform-origin: 25px 0px;
     transition: transform 0.8s cubic-bezier(.04,.27,.5,1.01), opacity 0.55s ease;
   }
-  div.wrapper nav#nav div#menu_toggle span:first-child{
+  .-active div.wrapper nav#nav div#menu_toggle span.ham{
+    background-color: hsla(155, 100%, 32%, 1);
+  }
+  div.wrapper nav#nav div#menu_toggle span.ham:first-child{
     transform-origin: 0% 0%;
   }
-  div.wrapper nav#nav div#menu_toggle span:nth-last-child(2){
+  div.wrapper nav#nav div#menu_toggle span.ham:nth-last-child(2){
     transform-origin: 100% 100%;
   }
   /* 旋轉度數 */
-  div.wrapper nav#nav div#menu_toggle input:checked ~ span{
+  div.wrapper nav#nav div#menu_toggle input:checked ~ span.ham{
     opacity: 1;
     transform: rotate(20deg) translate(-2px, -1px);
     background-color: #fff;
   }
   /* 隱藏中間那條 */
-  div.wrapper nav#nav div#menu_toggle input:checked ~ span:nth-last-child(2){
+  div.wrapper nav#nav div#menu_toggle input:checked ~ span.ham:nth-last-child(2){
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  div.wrapper nav#nav div#menu_toggle input:checked ~ span:nth-last-child(1){
+  div.wrapper nav#nav div#menu_toggle input:checked ~ span.ham:nth-last-child(1){
     transform: rotate(-20deg) translate(-2px, 0px);
   }
   div.wrapper nav#nav div#menu_toggle input:checked ~ ul.nav{
