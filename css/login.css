@@ -12,10 +12,12 @@ header#header{
         opacity: 1;
     }
 }
-header#header div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
-    border: 1px solid hsla(60, 100%, 40%, 1);
-    /* background-color: hsla(60, 100%, 40%, 1); */
+/* header#header div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
     color: hsla(60, 100%, 40%, 1);
+} */
+header#header div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span::after{
+    width: 6px;
+    height: 6px;
 }
 div.wrapper div.logo > a{
     background-image: url("../../images/logo_g_143x54.svg");
@@ -33,4 +35,50 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
 }
 div.wrapper nav#nav div#menu_toggle span.ham{
     background-color: hsla(155, 100%, 32%, 1);
+}
+@media screen and (max-width: 576px){
+    header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a{
+        color: #fff;
+    }
+    header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1):hover > a{
+        color: hsla(60, 100%, 40%, 1);
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
+        color: #fff;
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a, div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > span{
+        color: hsla(60, 100%, 40%, 1);
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a::after{
+      width: 6px;
+      height: 6px;
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
+      border: 1px solid transparent;
+      display: inline-block;
+      font-size: 2rem;
+      padding: 0;
+      color: #fff
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
+      border: 1px solid transparent;
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span::after{
+      content: ".";
+      color: transparent;
+      background-color: hsla(60, 100%, 40%, 1);
+      width: 0px;
+      height: 0px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      transition: all .2s;
+    }
+    div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span::after{
+      width: 6px;
+      height: 6px;
+    }
 }

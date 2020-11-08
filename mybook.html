@@ -8,6 +8,118 @@
     <link rel="icon" href="./images/tlogo_g.svg" type="image/x-icon">
   </head>
   <body>
-    
+    <div id="container" style="display: none;">
+      <div class="frame">
+        <div class="nav">
+          <ul class="links">
+            <li class="signin-active"><a class="btn">登入</a></li>
+            <li class="signup-inactive"><a class="btn">註冊</a></li>
+          </ul>
+        </div>
+        <div ng-app ng-init="checked = false">
+          <form class="form-signin" action="" method="post" name="form">
+            <label for="username">帳號</label>
+            <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+            <label for="password">密碼</label>
+            <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+            <div class="btn-wrap">
+              <div class="btn-animate">
+                <a class="btn-signin-cancel">取消</a>
+              </div>
+              <div class="btn-animate">
+                <a href="#" class="btn-signin">確認</a>
+              </div>
+            </div>
+          </form>
+            
+            <form class="form-signup" action="" method="post" name="form">
+              <label for="fullname">輸入姓名</label>
+              <input class="form-styling" type="text" name="fullname" placeholder=""/>
+              <label for="email">輸入信箱</label>
+              <input class="form-styling" type="text" name="email" placeholder=""/>
+              <label for="password">輸入密碼</label>
+              <input class="form-styling" type="password" name="password" placeholder=""/>
+              <label for="confirmpassword">再次確認密碼</label>
+              <input class="form-styling" type="password" name="confirmpassword" placeholder=""/>
+              <div class="btn-wrap">
+                <div class="btn-animate">
+                  <a class="btn-signin-cancel signupCancel">取消</a>
+                </div>
+                <div class="btn-animate">
+                  <a ng-click="checked = !checked" class="btn-signup">確認送出</a>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html" class="logo">讀旅</a>
+        </div>
+        
+        <nav id="nav">
+          <div id="menu_toggle">
+            <input type="checkbox">
+            <ul class="nav">
+              <li class="browse"><a href="./intro.html">選錄旅書</a></li>
+              <li class="about"><a href="./about.html">關於我們</a></li>
+              <li class="login">
+                <span id="spanLogin">會員登入</span>
+              </li>
+            </ul>
+            <span class="ham"></span> 
+            <span class="ham"></span> 
+            <span class="ham"></span> 
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="title">
+        <h2>YOU HAVE DONE ! ENJOY THEM !</h2>
+      </div>
+
+      <div id="embed">
+        <iframe src="https://drive.google.com/file/d/1E6V1TSV8axeOs5byfK1_TJ8pgPmc0-_5/preview"></iframe>
+      </div>
+
+      <div class="next_page">
+        <button class="btn">
+          <a href="#" class="btn">→填寫寄送資料</a>
+        </button>
+        <a href="./about.html" class="go_about">或前往 關於我們</a>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="cr_nav">
+          <nav class="bottom">
+            <ul class="bottom">
+              <li class="bottom_intro"><a href="./intro.html">→說明頁</a></li>
+              <li class="bottom_browse"><a href="./browse.html">→開始選擇</a></li>
+              <li class="bottom_about"><a href="./about.html">→關於我們</a></li>
+            </ul>
+          </nav>
+          <p>copyright &copy; 2020 Dulü TW.</p>
+        </div>
+        
+        <div class="ic_top">
+          <div class="icon">
+            <a href="#" class="medium"><img src="./images/icon_md_gr.svg" class="medium" alt=""></a>
+            <a href="#" class="ig"><img src="./images/icon_ig_gr.svg" class="ig" alt=""></a>
+            <a href="#" class="fb"><img src="./images/icon_fb_gr.svg" class="fb" alt=""></a>
+          </div>
+  
+          <div class="to_top">
+            <a href="#top">↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

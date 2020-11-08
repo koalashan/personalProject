@@ -18,27 +18,25 @@ footer#footer div.wrapper{
     padding: 0 20px;
     font-size: 0;
 }
-@media screen and (max-width: 768px){
-    footer#footer div.wrapper{
-        flex-direction: column;
-        align-items: center;
-    }
-}
 footer#footer div.wrapper div.cr_nav{
     /* border: 1px solid springgreen; */
-    width: 47%;
+    width: 300px;
     display: flex;
     flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
 }
 footer#footer div.wrapper div.cr_nav > p{
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     color: #acacac;
+    margin: 0;
 }
 footer#footer div.wrapper div.cr_nav nav.bottom{
     /* border: 1px solid rebeccapurple; */
     width: 300px;
     line-height: 4.5rem;
+    transition: width 1s;
 }
 @media screen and (max-width: 540px){
     footer#footer div.wrapper div.cr_nav nav.bottom{
@@ -54,6 +52,7 @@ footer#footer div.wrapper div.cr_nav nav.bottom > ul.bottom{
     padding: 0;
 }
 footer#footer div.wrapper div.cr_nav nav.bottom > ul.bottom > li{
+    /* border: 1px solid salmon; */
     font-size: 1.4rem;
     /* width: 90px; */
     margin-right: 10px;
@@ -65,10 +64,25 @@ footer#footer div.wrapper div.cr_nav nav.bottom > ul.bottom > li > a{
 }
 footer#footer div.wrapper div.ic_top {
     /* border: 1px solid slateblue; */
-    width: 18%;
+    width: 235px;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    transition: width 1s;
+}
+@media screen and (max-width: 768px){
+    footer#footer div.wrapper div.ic_top{
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        width: 0;
+    }
+}
+@media screen and (max-width: 576px){
+    footer#footer div.wrapper div.ic_top{
+        margin: 0;
+        flex-basis: 50px;
+        align-content: center;
+    }
 }
 footer#footer div.wrapper div.ic_top div.icon{
     /* border: 1px solid olive; */
@@ -76,20 +90,32 @@ footer#footer div.wrapper div.ic_top div.icon{
     justify-content: space-between;
     align-items: center;
     min-width: 135px;
+    transition: width 1s;
 }
-@media screen and (max-width: 768px){
-    footer#footer div.wrapper div.icon{
-        max-width: 200px;
-        justify-content: space-around;
-        align-items: center;
+@media screen and (max-width: 576px){
+    footer#footer div.wrapper div.ic_top div.icon{
+        flex-direction: column;
+        flex-basis: 95px;
+        margin-top: 15px;
+        min-width: 50px;
     }
 }
 footer#footer div.wrapper div.ic_top div.icon img{
     transform: scale(0.6);
     opacity: .7;
 }
+@media screen and (max-width: 576px){
+    footer#footer div.wrapper div.ic_top div.icon img{
+        transform: scale(0.5);
+    }
+}
 footer#footer div.wrapper div.ic_top div.to_top{
     position: relative;
+}
+@media screen and (max-width: 576px){
+    footer#footer div.wrapper div.ic_top div.to_top{
+        display: none;
+    }
 }
 footer#footer div.wrapper div.ic_top div.to_top > a{
     width: 60px;
@@ -107,8 +133,13 @@ footer#footer div.wrapper div.ic_top div.to_top > a{
     line-height: 2rem;
     line-height: 5.5rem;
     text-align: center;
+    transition: all 1s;
 }
-  
+@media screen and (max-width: 768px){
+    footer#footer div.wrapper div.ic_top div.to_top > a{
+        top: -80px;
+    }
+}
 footer#footer div.wrapper div.ic_top div.to_top > a:hover{
     /* background-color: hsla(60, 100%, 40%, 1); */
     transition: all 0.2s ease-out 0s;

@@ -17,7 +17,8 @@
     font-style: normal;
   }
   :root {
-    --swiper-theme-color: hsla(60, 100%, 40%, 1);
+    --swiper-theme-color: hsla(155, 100%, 32%, 1);
+
   }
   .swiper-container {
     margin-left: auto;
@@ -176,6 +177,7 @@
   .swiper-button-prev:after,
   .swiper-container-rtl .swiper-button-next:after {
     content: 'prev';
+    transform: scaleX(.85);
   }
   .swiper-button-next,
   .swiper-container-rtl .swiper-button-prev {
@@ -185,6 +187,7 @@
   .swiper-button-next:after,
   .swiper-container-rtl .swiper-button-prev:after {
     content: 'next';
+    transform: scaleX(.85);
   }
   .swiper-button-prev.swiper-button-white,
   .swiper-button-next.swiper-button-white {

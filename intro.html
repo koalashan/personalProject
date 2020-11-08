@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>讀旅 - 說明畫面</title>
+<title>讀旅 - 說明頁</title>
 <link rel="stylesheet" href="./css/intro.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
 <link rel="icon" href="./images/tlogo_g.svg" type="image/x-icon">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -87,7 +88,7 @@
 
   <main id="main">
     <div id="make">
-      <div class="title_make" data-aos="fade-up">
+      <div class="title_make" data-aos="fade">
         <!-- decorate_element -->
         <h2>
           我們提供『一書一路線』的設計組合，<br>
@@ -97,18 +98,18 @@
 
         <div class="wrap">
           <div class="make step01">
-            <img src="./images/step01.svg" class="icon01" alt="">
-            <p class="text01">挑選喜歡的書或路線</p>
+            <img src="./images/step01.svg" class="icon01 animated flipInX" alt="" style="animation-duration: 1s; animation-timing-function: ease-out; animation-iteration-count: 1; animation-delay: .1s;">
+            <p class="text01" data-aos="fade">挑選喜歡的書及路線</p>
           </div>
-          <div class="arrow"></div>
+          <div class="arrow" data-aos="fade"></div>
           <div class="make step02">
-            <img src="./images/step02.svg" class="icon02" alt="">
-            <p class="text02">收集想去的周邊店家</p>
+            <img src="./images/step02.svg" class="icon02 animated flipInX" alt="" style="animation-duration: 1s; animation-iteration-count: 1; animation-delay: .4s;">
+            <p class="text02" data-aos="fade">採集想去的周邊店家</p>
           </div>
-          <div class="arrow"></div>
+          <div class="arrow" data-aos="fade"></div>
           <div class="make step03">
-            <img src="./images/step03.svg" class="icon03" alt="">
-            <p class="text03">完成一本你的旅冊</p>
+            <img src="./images/step03.svg" class="icon03 animated flipInX" alt="" style="animation-duration: 1.2s; animation-iteration-count: 1; animation-delay: .6s;">
+            <p class="text03" data-aos="fade">完成一本你的旅冊</p>
           </div>
         </div>
     </div>
@@ -134,12 +135,19 @@
         <div class="slide_buttons"></div>
         <div class="contex_para">
           <p class="para01">
+            我們要敞開心胸，和宜蘭的地景連接。
+            <br>
+            連接冬天的水田、夏天的龍舟，還有清晨傍晚層層疊疊的山色。
+            <br>
+            — 《在田中央》
+          </p>
+          <!-- <p class="para01">
             橋下的大卡車轟隆隆急馳而過，在亮晃晃的陽光下，我聽見了另一個聲音。
             <br>
             那是社福館的混聲合唱，它正穿越這座橋，親切地與宜蘭河潺潺的流水唱和。
             <br>
             — 《在田中央》
-          </p>
+          </p> -->
         </div>
 
         <div class="directional_nav">
@@ -226,7 +234,9 @@
     </div>
 
     <div class="bt_make">
-      <a href="./browse.html" class="bt_make">出發</a>
+      <button class="btn">
+        <a href="./browse.html" class="bt_make">→開始選書</a>
+      </button>
     </div>
   </main>
 

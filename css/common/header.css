@@ -36,10 +36,49 @@ div.wrapper{
     max-width: 88%;
   }
 }
+/*  */
+.-active div.wrapper div.bar-container{
+  padding-bottom: 15px;
+  display: none;
+}
+.-active div.wrapper div.bar-container div.bar{
+  /* background-color: #fff; */
+  height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  /* box-shadow: -8px 2px 14px rgb(32 32 32 / 10%); */
+}
+.-active div.wrapper div.bar-container div.bar div.progress-bar{
+  /* border: 1px solid green; */
+  background-color: #ccc;
+  opacity: .8;
+  height: 4px;
+  width: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+}
+.-active div.wrapper div.bar-container div.bar div.progress-bar::after{
+  content: " ";
+  /* background-color: hsla(60, 100%, 40%, 1); */
+  background-color: hsla(155, 100%, 32%, 1);
+  border-radius: 8px;
+  width: 33.3%;
+  height: 100%;
+  display: block;
+  transition: width 2s ease 5s;
+}
+/*  */
 div.wrapper div.logo > a{
   /* background-image: url("../../images/logo_m_143x54.svg"); */
   background-image: url("../../images/logo_w.svg");
-  opacity: .85;
+  opacity: .8;
   background-repeat: no-repeat;
   display: block;
   text-indent: -900px;
@@ -151,9 +190,46 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
   color: hsla(60, 100%, 40%, 1);
 }
 @media screen and (max-width: 576px){
+  .-active div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
+    color: #fff;
+  }
+  .-active div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  .-active div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
+    border: 1px solid transparent;
+  }
+  div.wrapper nav#nav div#menu_toggle ul.nav > li:hover > a::after{
+    width: 6px;
+    height: 6px;
+  }
   div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span{
     border: 1px solid transparent;
     display: inline-block;
+    font-size: 2rem;
+    padding: 0;
+  }
+  div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
+    border: 1px solid transparent;
+  }
+  div.wrapper nav#nav div#menu_toggle ul.nav > li.login > span::after{
+    content: ".";
+    color: transparent;
+    background-color: hsla(60, 100%, 40%, 1);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    transition: all .2s;
+  }
+  div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span::after{
+    width: 6px;
+    height: 6px;
   }
 }
 @media screen and (max-width: 576px){
@@ -217,6 +293,7 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
   div.wrapper nav#nav div#menu_toggle ul.nav > li{
     margin-top: 25px;
     width: 100%;
+    margin: 20px;
   }
   div.wrapper nav#nav div#menu_toggle ul.nav > li > a{
     text-decoration: none;

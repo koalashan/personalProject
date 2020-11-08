@@ -32,7 +32,7 @@ div#top::before{
   }
 div#top div.banner{
     /* width:  */
-    height: 99vh;
+    height: 99.6vh;
     background-color: #000;
     /* 放大時遮住多餘部分 */
     overflow: hidden;
@@ -63,6 +63,7 @@ div#top div.banner > div:nth-child(4){
 }
 div#top div.banner > div:nth-child(5){
     animation-delay: 20s;
+    background-position: 83% center;
 }
 @keyframes slide{
     10%{
