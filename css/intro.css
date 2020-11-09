@@ -453,6 +453,11 @@ div#para_area div.para p.quot_left{
         left: 200px;
     }
 }
+@media screen and (max-width: 768px){
+    div#para_area div.para p.quot_left{
+        display: none;
+    }
+}
 div#para_area div.para p.main_para{
     /* border: 1px solid purple; */
     color: hsla(57, 9%, 61%, 1);
