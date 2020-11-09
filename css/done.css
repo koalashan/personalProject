@@ -90,7 +90,7 @@ div#top div.title_wrap{
     width: 75%;
     margin: 0 auto;
     /* text-align: center; */
-    padding-top: 14%;
+    padding-top: 210px;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -122,6 +122,11 @@ div#top div.back{
     border-radius: 50%;
     border: 1px solid transparent;
 }
+@media screen and (max-width: 900px){
+    div#top div.back{
+        left: 25px;
+    }
+}
 div#top div.back:hover{
     border: 1px solid hsla(60, 100%, 40%, .8);
     transition: all 0.4s;
@@ -146,6 +151,7 @@ div#sop{
 @media screen and (max-width: 950px){
     div#sop{
         min-width: 760px;
+        margin-top: 65px;
     }
 }
 @media screen and (max-width: 850px){
@@ -161,13 +167,30 @@ div#sop{
 div.sop01{
     margin-top: 100px !important;
 }
+@media screen and (max-width: 500px){
+    div.sop01{
+        margin-top: 70px !important;
+    }
+}
 div#sop div.h_wrap{
     margin-left: 65px;
+    display: inline-block;
 }
 @media screen and (max-width: 900px){
     div#sop div.h_wrap{
         margin-left: 40px;
         width: 420px;
+    }
+}
+@media screen and (max-width: 500px){
+    div#sop div.h_wrap{
+        width: 0px;
+    }
+}
+@media screen and (max-width: 500px){
+    div#sop div.h_wrap{
+        width: 305px;
+        margin: 0;
     }
 }
 div#sop div.h_wrap div.sop_num{
@@ -180,6 +203,11 @@ div#sop div.h_wrap div.sop_num{
     justify-content: center;
     align-items: center;
 }  
+@media screen and (max-width: 768px){
+    div#sop div.h_wrap div.sop_num{
+        vertical-align: middle;
+    }
+}
 div#sop div.h_wrap div.sop_num p{
     /* border: 1px solid chocolate; */
     font-size: 2.4rem;
@@ -197,8 +225,9 @@ div#sop div.h_wrap div.heading{
 }
 @media screen and (max-width: 768px){
     div#sop div.h_wrap div.heading{
-        width: 80%;
+        width: 240px;
         flex-wrap: wrap;
+        vertical-align: middle;
     }
 }
 div#sop div.h_wrap div.heading h2{
@@ -218,6 +247,11 @@ div#sop div.h_wrap div.heading p{
     margin-left: 20px;
     height: 30px;
     align-self: flex-end;
+}
+@media screen and (max-width: 768px){
+    div#sop div.h_wrap div.heading p{
+        margin: 0 0 0 20px;
+    }
 }
 div#sop div.content{
     /* border: 1px solid blue; */

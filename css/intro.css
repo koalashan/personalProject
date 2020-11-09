@@ -116,6 +116,11 @@ div#make div.title_make > h2{
     font-weight: 300;
     line-height: 1.8;
 }
+@media screen and (max-width: 500px){
+    div#make div.title_make > h2{
+        font-size: 1.6rem;
+    }
+}
 div#make div.wrap{
     /* border: 1px solid blue; */
     display: flex;
@@ -635,7 +640,7 @@ div#comment div.card{
 }
 @media screen and (max-width: 500px){
     div#comment div.card{
-        /* width: 450px; */
+        width: 380px;
     }
 }
 div#comment div.card div.wrap{

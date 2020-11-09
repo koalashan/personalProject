@@ -234,7 +234,7 @@ div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
 }
 @media screen and (max-width: 576px){
   div.wrapper nav#nav div#menu_toggle ul.nav > li.login:hover > span{
-    color:  hsla(60, 100%, 40%, 1);
+    color: #fff;
     background-color: transparent;
   }
 }
@@ -352,7 +352,7 @@ div#container{
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: hsla(155, 100%, 32%, .98);
+  background: hsl(0deg 0% 1% / 73%);
   z-index: 9999;
   transition: all 1s ease;
 }
@@ -399,9 +399,9 @@ div#container div.frame div.nav ul > li{
 }
 div#container div.frame div.nav ul > li.signin-active > a {
   padding-bottom: 10px;
-  color: hsla(60, 100%, 40%, 1);
+  color: hsla(155, 100%, 32%, 1);
   text-decoration: none;
-  border-bottom: solid 2px hsla(60, 100%, 40%, 1);
+  border-bottom: solid 2px hsla(155, 100%, 32%, 1);
   transition: all .25s ease;
   cursor: pointer;
 }
@@ -414,16 +414,18 @@ div#container div.frame div.nav ul > li.signin-inactive > a {
 }
 div#container div.frame div.nav ul > li.signup-active > a {
   cursor: pointer;
-  color: hsla(60, 100%, 40%, 1);
+  color: hsla(155, 100%, 32%, 1);
   text-decoration: none;
-  border-bottom: solid 2px hsla(60, 100%, 40%, 1);
+  border-bottom: 2px solid hsla(155, 100%, 32%, 1);
   padding-bottom: 10px;
+  letter-spacing: .3rem;
 }
 div#container div.frame div.nav ul > li.signup-inactive > a {
   cursor: pointer;
   color: hsl(0deg 0% 34% / 50%);
   text-decoration: none;
   transition: all .25s ease;
+  letter-spacing: .3rem;
 }
 .form-signin {
   width: 430px;
@@ -512,9 +514,10 @@ div#container div.frame div.nav ul > li.signup-inactive > a {
   background: #0000000d;
 }
 label {
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   font-size: 13px;
+  letter-spacing: .2rem;
   padding-left: 15px;
   padding-bottom: 10px;
   color: hsl(0deg 0% 34% / 80%);
@@ -621,6 +624,7 @@ label {
   border-radius: 20px;
   color: #fff;
   text-decoration: none;
+  letter-spacing: .3rem;
   display: block;
   height: 100%;
   padding-top: 8px;
@@ -630,6 +634,7 @@ label {
   display: block;
   height: 100%;
   padding-top: 8px;
+  letter-spacing: .3rem;
 }
 .btn-signin-cancel:hover {
   background-color: #b7b7b7;
@@ -651,13 +656,13 @@ label {
   width: 120px;
   height: 35px;
   border: none;
-  border-radius: 20px;
+  border-radius: 2px;
   margin-left: 15px;
   margin-top: 22px;
-  background-color: hsla(60, 100%, 40%, 1);
+  background-color: hsla(155, 100%, 32%, 1);
   left: 0px;
   top: 0px;
-  transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s; 
+  transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
 }
 .btn-animate:nth-child(1){
   /* border: 1px solid steelblue; */
@@ -676,16 +681,17 @@ a.btn-signup{
   display: block;
   height: 100%;
   padding-top: 8px;
+  letter-spacing: .3rem;
 }
 a.btn-signup:hover{
   cursor: pointer;
-  background-color: #b6b600;
+  background-color: hsl(155deg 100% 28%);
   border-radius: inherit;
   transition: background-color .5s;
 }
 a.btn-signin:hover {
-  cursor: pointer; 
-  background-color: #b6b600;
-  transition: background-color .5s; 
+  cursor: pointer;
+  background-color: hsl(155deg 100% 28%);
+  transition: background-color .5s;
 }
 /* ================================================== */

@@ -18,6 +18,13 @@ footer#footer div.wrapper{
     padding: 0 20px;
     font-size: 0;
 }
+@media screen and (max-width: 425px){
+    footer#footer div.wrapper{
+        flex-direction: column-reverse;
+        align-content: center;
+        text-align: center;
+    }
+}
 footer#footer div.wrapper div.cr_nav{
     /* border: 1px solid springgreen; */
     width: 300px;
@@ -25,6 +32,13 @@ footer#footer div.wrapper div.cr_nav{
     flex-direction: column;
     height: 100px;
     justify-content: space-around;
+}
+@media screen and (max-width: 425px){
+    footer#footer div.wrapper div.cr_nav{
+        justify-content: flex-end;
+        height: 30px;
+        margin: 20px;
+    }
 }
 footer#footer div.wrapper div.cr_nav > p{
     font-size: 1.2rem;
@@ -41,6 +55,11 @@ footer#footer div.wrapper div.cr_nav nav.bottom{
 @media screen and (max-width: 540px){
     footer#footer div.wrapper div.cr_nav nav.bottom{
         width: 95%;
+    }
+}
+@media screen and (max-width: 425px){
+    footer#footer div.wrapper div.cr_nav nav.bottom{
+        margin-bottom: 5px;
     }
 }
 footer#footer div.wrapper div.cr_nav nav.bottom > ul.bottom{
@@ -84,6 +103,12 @@ footer#footer div.wrapper div.ic_top {
         align-content: center;
     }
 }
+@media screen and (max-width: 425px){
+    footer#footer div.wrapper div.ic_top{
+        align-content: flex-start;
+        width: 110px;
+    }
+}
 footer#footer div.wrapper div.ic_top div.icon{
     /* border: 1px solid olive; */
     display: flex;
@@ -98,6 +123,13 @@ footer#footer div.wrapper div.ic_top div.icon{
         flex-basis: 95px;
         margin-top: 15px;
         min-width: 50px;
+    }
+}
+@media screen and (max-width: 425px){
+    footer#footer div.wrapper div.ic_top div.icon{
+        flex-direction: row;
+        flex-basis: 20px;
+        width: 100px;
     }
 }
 footer#footer div.wrapper div.ic_top div.icon img{

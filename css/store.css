@@ -49,7 +49,7 @@ div#tab_container{
 }
 @media screen and (max-width: 800px){
     div#tab_container{
-        max-width: 70%;
+        max-width: 85%;
     }
 }
 div#tab_container div.title{
@@ -63,6 +63,11 @@ div#tab_container div.title > h2{
     text-align: center;
     display: inline-block;
     line-height: 1.8;
+}
+@media screen and (max-width: 460px){
+    div#tab_container div.title > h2{
+        font-size: 1.6rem;
+    }
 }
 div#tab_container div.tab_list_block{
     /* border: 1px solid goldenrod; */
@@ -97,6 +102,23 @@ div#tab_container div.tab_list_block ul.tab_list > li > a{
     /* box-shadow: 4px -4px 15px -6px rgba(0, 0, 0, .1); */
     position: relative;
     top: 1px;
+    transition: all 1s;
+}
+@media screen and (max-width: 460px){
+    div#tab_container div.tab_list_block ul.tab_list > li > a{
+        padding: 10px 25px;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 420px){
+    div#tab_container div.tab_list_block ul.tab_list > li > a{
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 370px){
+    div#tab_container div.tab_list_block ul.tab_list > li > a{
+        padding: 10px 13px;
+    }
 }
 /* div#tab_container div.tab_list_block ul.tab_list > li > a{
     color: hsla(60, 100%, 40%, 1);
@@ -146,7 +168,7 @@ div#tab_container div.tab_content div.tab1{
 }
 div#tab_container div.tab_content div.tab div.row > a{
     /* border: 1px solid aqua; */
-    padding: 20px;
+    padding: 15px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +176,19 @@ div#tab_container div.tab_content div.tab div.row > a{
     position: relative;
     text-decoration: none;
     color: hsla(57, 9%, 61%, 1);
+    transition: all 1s;
+}
+@media screen and (max-width: 500px){
+    div#tab_container div.tab_content div.tab div.row > a{
+        transform: scale(.95);
+        padding: 0;
+    }
+}
+@media screen and (max-width: 385px){
+    div#tab_container div.tab_content div.tab div.row > a{
+        transform: scale(.85);
+        margin: 0;
+    }
 }
 div#tab_container div.tab_content div.tab div.row > a > div.info{
     /* border: 1px solid blue; */

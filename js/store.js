@@ -1,3 +1,4 @@
+// tab
 $(function(){
     $("a.tab").on("click", function(e){
       e.preventDefault();
@@ -10,4 +11,16 @@ $(function(){
       $("div.tab").removeClass("-on");
       $("div.tab." + $(this).attr("data-target")).addClass("-on");
     });
-  });
+});
+
+// AOS
+$(function(){
+    AOS.init({
+      delay: 0,
+      duration: 1000,
+      easing: 'ease',
+      once: true,
+      mirror: false,
+      // anchorPlacement: 'top-bottom',
+    });
+})

@@ -38,6 +38,10 @@ div#top div.banner div.title_wrap h2{
     font-size: 3.2rem;
     color: #fff;
 }
+div#content{
+    width: 90%;
+    margin: 0 auto;
+}
 div#content div.text_ab, .text_ab2{
     /* border: 1px solid blue; */
     text-align: center;
@@ -55,11 +59,21 @@ div#content div.text_ab h2{
     color: hsla(155, 100%, 32%, 1);
     margin: 30px;
 }
+@media screen and (max-width: 768px){
+    div#content div.text_ab h2{
+        font-size: 2rem;
+    }
+}
 div#content p{
     font-size: 1.6rem;
     color: hsla(57, 9%, 61%, 1);
     line-height: 1.7;
     letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 768px){
+    div#content p{
+        font-size: 1.4rem;
+    }
 }
 div#content div.img{
     /* border: 1px solid gold; */

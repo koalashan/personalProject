@@ -29,7 +29,7 @@
                 <a class="btn-signin-cancel">取消</a>
               </div>
               <div class="btn-animate">
-                <a href="#" class="btn-signin">確認</a>
+                <a href="./login.html" class="btn-signin">確認</a>
               </div>
             </div>
           </form>
@@ -69,7 +69,7 @@
               <li class="browse"><a href="./intro.html">選錄旅書</a></li>
               <li class="about"><a href="./about.html">關於我們</a></li>
               <li class="login">
-                <span id="spanLogin">會員登入</span>
+                <span id="spanLogin"><a href="./intro.html">登出</a></span>
               </li>
             </ul>
             <span class="ham"></span> 
@@ -80,9 +80,35 @@
       </div>
     </header>
 
-    <main id="main">
-      
-    </main>
+    <div id="parent_container">
+      <aside id="aside">
+        <div class="title_bar">
+          <h2>我的旅冊</h2>
+        </div>
+        <div class="bk_wrp">
+          <div class="book">
+            <h2>01</h2>
+            <img src="./images/my_book01.svg" alt="">
+          </div>
+          <div class="book">
+            <h2>02</h2>
+            <img src="./images/my_book02.svg" alt="">
+          </div>
+          <div class="book">
+            <h2>03</h2>
+            <img src="./images/my_book02.svg" alt="">
+          </div>
+        </div>
+      </aside>
+      <main id="main">
+        <div class="area">
+          <div class="pages">
+            <img src="./images/mybook_pages01.svg">
+            <img src="./images/mybook_pages02.svg">
+          </div>
+        </div>
+      </main>
+    </div>
 
     <footer id="footer">
       <div class="wrapper">
@@ -110,5 +136,47 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function showLogin(){
+          let spanLogin = document.getElementById("spanLogin");
+          
+          if(spanLogin.innerText == '登出'){
+            // document.getElementById('memName').innerText = '';
+            // document.getElementById('spanLogin').innerText = '會員登入';
+          }else{
+            document.getElementById('container').style.display = '';
+          }
+      }
+      function sendForm(e){
+          let username = document.getElementById("username").value;
+          let password = document.getElementById("password").value;
+
+          if(username != 'Olive' || password != '1111'){
+              alert('請輸入正確帳號密碼');
+              e.preventDefault();
+              return;
+          }else{
+              alert('登入成功');
+              // document.getElementById("memName").innerText = '董董';
+              document.getElementById('spanLogin').innerText = '登出';
+              document.getElementById('container').style.display = 'none';
+              document.getElementById('username').value = '';
+              document.getElementById('password').value = '';
+          }
+      }
+      function cancelLogin(){
+          document.getElementById('username').value = '';
+          document.getElementById('password').value = '';
+          document.getElementById('container').style.display = 'none';
+      }
+      function init(){
+          document.getElementById('spanLogin').onclick = showLogin;
+          document.querySelector('.btn-signin').onclick = sendForm;
+          document.querySelector('.btn-signin-cancel').onclick = cancelLogin;
+          document.querySelector('.signupCancel').onclick = cancelLogin;
+      }
+      window.addEventListener("load", init, false);
+    </script>
   </body>
 </html>
