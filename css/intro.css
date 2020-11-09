@@ -500,15 +500,41 @@ div#para_area div.para p.main_para{
         /* text-align: center; */
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 445px){
     div#para_area div.para p.main_para{
+        width: 320px;
+        font-size: 1.4rem;
         margin: 0;
+        margin-left: 7px;
     }
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 425px){
     div#para_area div.para p.main_para{
-        width: 300px;
-        font-size: 1.4rem;
+        width: 340px;
+        margin-left: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    div#para_area div.para p.main_para{
+        margin-left: 10px;
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 382px){
+    div#para_area div.para p.main_para{
+        width: 320px;
+    }
+}
+@media screen and (max-width: 360px){
+    div#para_area div.para p.main_para{
+        width: 278px;
+        font-size: 1.2rem;;
+    }
+}
+@media screen and (max-width: 320px){
+    div#para_area div.para p.main_para{
+        width: 278px;
+        font-size: 1.2rem;;
     }
 }
 div#para_area div.img_area{
@@ -640,6 +666,11 @@ div#comment div.title_comment h2.comment{
         transform: rotate(-5deg) translateY(0px) translateX(25px);
     }
 }
+@media screen and (max-width: 500px){
+    div#comment div.title_comment h2.comment{
+        font-size: 2rem;
+    }
+}
 div#comment div.title_comment h2.comment::after{
     content: "";
     display: inline-block;
@@ -684,6 +715,11 @@ div#comment div.card{
 @media screen and (max-width: 400px){
     div#comment div.card {
         width: 330px;
+    }
+}
+@media screen and (max-width: 355px){
+    div#comment div.card {
+        width: 300px;
     }
 }
 div#comment div.card div.wrap{
@@ -735,9 +771,20 @@ div#comment div.card div.wrap div.comme_para01 p.name{
     opacity: 65%;
     margin-top: 10px;
 }
+@media screen and (max-width: 500px){
+    div#comment div.card div.wrap div.comme_para01 p.name{
+        font-size: 1.3rem;
+    }
+}
 @media screen and (max-width: 650px){
     div#comment div.card div.wrap div.comme_para01 p{
         font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 500px){
+    div#comment div.card div.wrap div.comme_para01 p{
+        font-size: 1.3rem;
+        line-height: 1.8;
     }
 }
 div.bt_make{
