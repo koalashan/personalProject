@@ -16,29 +16,52 @@ div#top div.banner{
     background-position: center bottom;
     background-attachment: fixed;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     /* position: relative; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
 }
+@media screen and (max-width: 576px){
+    div#top div.banner{
+        height: 50vh;
+        align-content: flex-end;
+    }
+}
 div#top div.banner div.title_wrap{
     /* border: 1px solid blueviolet; */
     width: 75%;
     margin: 0 auto;
 }
+@media screen and (max-width: 576px){
+    div#top div.banner div.title_wrap{
+        margin: 60px auto;
+    }
+}
 div#top div.banner div.title_wrap h2{
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #fff;
     font-weight: 500;
+    margin: 0;
+    margin-bottom: 13px;
+}
+@media screen and (max-width: 576px){
+    div#top div.banner div.title_wrap h2{
+        font-size: 2.4rem;
+    }
 }
 div#top div.banner div.title_wrap h3{
     font-size: 2.2rem;
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.3rem;
-    margin: 5px 0 0 8px;
+    margin: 3px 0 0 2px;
+}
+@media screen and (max-width: 576px){
+    div#top div.banner div.title_wrap h3{
+        font-size: 1.8rem;
+    }
 }
 /* div#top div.banner div.tags{
     border: 1px solid orange;
@@ -70,6 +93,11 @@ div#top div.banner div.back{
         left: 8px;
     }
 }
+@media screen and (max-width: 576px){
+    div#top div.banner div.back{
+        display: none;
+    }
+}
 div#top div.banner div.back:hover{
     border: 1px solid hsla(60, 100%, 40%, .8);
     transition: all 0.4s;
@@ -87,6 +115,11 @@ div.title{
         margin-top: 100px;
     }
 }
+@media screen and (max-width: 576px){
+    div.title{
+        margin-top: 40px;
+    }
+}
 div.title > h2{
     font-size: 1.8rem;
     color: #ababab;
@@ -96,7 +129,12 @@ div.title > h2{
 }
 @media screen and (max-width: 850px){
     div.title > h2{
-        display: none;
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 410px){
+    div.title > h2{
+        font-size: 1.5rem;
     }
 }
 div.title > p{
@@ -106,16 +144,27 @@ div.title > p{
     font-size: 1.5rem;
     margin: 0;
 }
+@media screen and (max-width: 410px){
+    div.title > p{
+        font-size: 1.4rem;
+    }
+}
+
 div.swiper-container{
     /* border: 1px solid purple; */
     width: 75%;
     height: 60vh;
-    margin: 75px auto;
+    margin: 60px auto;
     margin-bottom: 170px;
     text-align: center;
     position: relative;
     border-radius: 3px;
     overflow: hidden;
+}
+@media screen and (max-width: 992px){
+    div.swiper-container{
+        width: 90%;
+    }
 }
 div.swiper-container::before{
     content: "";
@@ -170,32 +219,23 @@ div#main_content{
         flex-direction: column;
     }
 }
-div#main_content div.intro_wrap div.intro{
-    /* border: 1px solid darkorange; */
-    min-width: 501px;
-    width: 47%;
-    margin-left: 40px;
-    transition: width 1s;
+div#main_content h2{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 2rem;
+    color: hsla(155, 100%, 32%, 1);
+    display: inline-block;
+    letter-spacing: 0.3rem;
 }
-@media screen and (max-width: 1080px){
-    div#main_content div.intro_wrap div.intro{
-        min-width: 365px;
+@media screen and (max-width: 768px){
+    div#main_content h2{
+        font-size: 1.8rem;
     }
 }
-@media screen and (max-width: 960px){
-    div#main_content div.intro_wrap div.intro{
-        width: 53%;
-    }
-}
-@media screen and (max-width: 850px){
-    div#main_content div.intro_wrap div.intro{
-        
-width: 100%;
-        
-margin: 0 10px;
-        
-margin-top: 40px;
-    }
+div#main_content div.intro_wrap{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 div#main_content div.intro_wrap div.intro_img{
     /* border: 1px solid cyan; */
@@ -217,18 +257,57 @@ div#main_content div.intro_wrap div.intro_img{
 div#main_content div.intro_wrap div.intro_img img{
     min-width: 100%;
 }
-div#main_content h2{
-    margin-bottom: 20px;
-    margin-top: 5px;
-    font-size: 2rem;
-    color: hsla(155, 100%, 32%, 1);
-    display: inline-block;
-    letter-spacing: 0.3rem;
+div#main_content div.intro_wrap div.intro{
+    /* border: 1px solid darkorange; */
+    min-width: 501px;
+    width: 47%;
+    margin-left: 40px;
+    transition: width 1s;
+    padding-bottom: 30px;
 }
-div#main_content div.intro_wrap{
-    display: flex;
-    justify-content: space-between;
+@media screen and (max-width: 1080px){
+    div#main_content div.intro_wrap div.intro{
+        min-width: 365px;
+    }
 }
+@media screen and (max-width: 960px){
+    div#main_content div.intro_wrap div.intro{
+        width: 53%;
+    }
+}
+@media screen and (max-width: 850px){
+    div#main_content div.intro_wrap div.intro{
+        /* border: 1px solid saddlebrown; */
+        min-width: 96%;
+        margin: 0 10px;
+        margin-top: 40px;
+    }
+}
+/* show more -- start */
+input.state{
+    display: none;
+}
+p.target{
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: all .2s ease;
+}
+input.state:checked ~ .intro .target{
+    opacity: 1;
+    font-size: 1.5rem;
+    max-height: 999em;
+}
+input.state ~ label.trigger::before{
+    content: "↓";
+}
+input.state:checked ~ label.trigger::before{
+    content: "↑";
+}
+input.state:checked ~ label.trigger{
+    bottom: -20px;
+}
+/* show more -- end */
 div#main_content div.intro_wrap div.intro p{
     font-size: 1.5rem;
     margin-bottom: 25px;
@@ -242,24 +321,21 @@ div#main_content div.intro_wrap div.intro p{
         margin-bottom: 20px;
     }
 }
-div#main_content div.intro_wrap div.intro p:nth-last-of-type(1){
+div#main_content div.intro_wrap div.intro p:nth-last-of-type(2){
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     overflow: hidden;
 }
 @media screen and (max-width: 1080px){
-    div#main_content div.intro_wrap div.intro p:nth-last-of-type(1){
-        display: none;
-    }
     div#main_content div.intro_wrap div.intro p:nth-last-of-type(2){
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 1;
         overflow: hidden;
     }
 }
-div#main_content div.intro_wrap div.intro span.more{
+div#main_content div.intro_wrap label.trigger{
     border: 1px solid hsla(60, 20%, 75%, 1);
     display: inline-block;
     width: 35px;
@@ -271,12 +347,55 @@ div#main_content div.intro_wrap div.intro span.more{
     border-radius: 3px;
     letter-spacing: 0.2rem;
     transition: width .3s ease-out;
+    position: absolute;
+    bottom: 10px;
+    right: 43%;
+    transition: all 1s;
 }
-div#main_content div.intro_wrap div.intro span.more:hover{
+div#main_content div.intro_wrap label.trigger:hover{
     border: 1px solid hsla(60, 100%, 40%, 1);
     color: hsla(60, 100%, 40%, 1);
     cursor: pointer;
-    width: 60px;
+}
+@media screen and (max-width: 1435px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 45%;
+    }
+}
+@media screen and (max-width: 1330px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 47%;
+    }
+}
+@media screen and (max-width: 1265px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 49%;
+    }
+}
+@media screen and (max-width: 1220px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 52%;
+    }
+}
+@media screen and (max-width: 1165px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 54%;
+    }
+}
+@media screen and (max-width: 1080px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 41%;
+    }
+}
+@media screen and (max-width: 1015px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 43%;
+    }
+}
+@media screen and (max-width: 850px){
+    div#main_content div.intro_wrap label.trigger{
+        right: 3%;
+    }
 }
 div#main_content div.list_wrap{
     /* border: 1px solid orange; */
@@ -353,6 +472,11 @@ div.next_page button.btn{
 	overflow: hidden;
 	padding: 0;
 	/* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
+}
+@media screen and (max-width: 768px){
+    div.next_page button.btn{
+        width: 230px;
+    }
 }
 div.next_page button.btn:hover{
     color: #fff;

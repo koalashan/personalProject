@@ -12,7 +12,7 @@ function sendForm(e){
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
 
-    if(username != 'Olive' || password != '1111'){
+    if(username != 'yy' || password != '111'){
         alert('請輸入正確帳號密碼');
         e.preventDefault();
         return;

@@ -24,9 +24,9 @@
         <div ng-app ng-init="checked = false">
           <form class="form-signin" action="" method="post" name="form">
             <label for="username">帳號</label>
-            <input class="form-styling" type="text" name="username" id="username" placeholder="'Olive'">
+            <input class="form-styling" type="text" name="username" id="username" placeholder="請輸入'yy'">
             <label for="password">密碼</label>
-            <input class="form-styling" type="password" name="password" id="password" placeholder="'1111'">
+            <input class="form-styling" type="password" name="password" id="password" placeholder="請輸入'111'">
             <div class="btn-wrap">
               <div class="btn-animate">
                 <a class="btn-signin-cancel">取消</a>
@@ -100,7 +100,7 @@
 
       <div class="title">
         <!-- <h2>融於景色│擁有溫度的水泥│市民日常河畔散步</h2> -->
-        <h2>「讓雨的孩子，保留了聽雨、賞雨的自在心情」</h2>
+        <h2>讓雨的孩子，保留了聽雨、賞雨的自在心情</h2>
         <p>保留下的施工便橋，成為市民與河更靠近的日常，沿著河往社區走入，建築與環境被和諧的連結起</p>
       </div>
 
@@ -128,8 +128,10 @@
           <div class="intro_img">
             <img src="./images/page_img_book.jpg" alt="">
           </div>
+          
+          <input type="checkbox" class="state" id="more">
           <div class="intro">
-            <h2>在田中央 │ 關於這本書</h2>
+            <h2>在田中央 │ 有關這本書</h2>
             <p>
               我們按圖索驥看這些「田中央」作品，不用管桁架、耐候性鋼板、格柵、洗石子、Mock-up、公共性那些語彙，就是<span>用心體會風、光、水與建築的交融，接著再多看一點建築的細節。</span>
             </p>
@@ -137,17 +139,15 @@
               走訪的同時再讀起書中的記錄章節，如何設計出這座河畔合一的棧道，從概念發想到實體建物，<span>透過閱讀和實地探訪，探索建築的另類樣貌。</span>
             </p>
             <p>
-              田中央回歸人類的觀點觀看，找出丟失的東西。敞開心胸，和宜蘭的地景連接。
+              他們回歸人類的觀點觀看，找出丟失的東西。敞開心胸，和宜蘭的地景連接。
             </p>
-
-            <!-- <p>
-              選擇長期定居在宜蘭過活與工作，這群建築師同時是居民，以及專業者；二十多年來蔓生而出一大片開放的、從小步道至大橋樑的公共建築群。
+            <p class="target">
+              在田中央選擇長期定居在宜蘭過活與工作，這群建築師同時是居民以及專業者；二十多年來蔓生而出一大片開放的、從小步道至大橋樑的公共建築群。
               <br><br>
               「把這裡當作家園，能做什麼就做什麼，暫時做不到的就放在心裡等待，能做也要故意留下一些空白。」—黃聲遠
-            </p> -->
-            <span class="more">↓</span>
-            <!-- <span class="more">↑</span> -->
+            </p>
           </div>
+          <label for="more" class="trigger"></label>
         </div>
 
         <div class="list_wrap">

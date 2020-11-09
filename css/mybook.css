@@ -6,6 +6,7 @@ header#header{
     background-color: #fff;
     opacity: .9;
     box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
+    position: sticky;
 }
 @media screen and (max-width: 576px){
     header#header{
@@ -85,7 +86,7 @@ div.wrapper nav#nav div#menu_toggle span.ham{
 div.title{
     /* border: 1px solid darkcyan; */
     text-align: center;
-    margin-top: 160px;
+    margin-top: 40px;
 }
 div.title > h2{
     font-size: 1.8rem;
@@ -96,9 +97,14 @@ div.title > h2{
 }
 div#embed{
     max-width: 55%;
-    margin: 30px auto;
+    margin: 20px auto;
     overflow: hidden;
     transition: all 1s;
+}
+@media screen and (max-width: 1200px){
+    div#embed{
+        margin: 10px auto;
+    }
 }
 div#embed iframe{
     width: 100%;
@@ -162,6 +168,11 @@ div.next_page button.btn{
 	overflow: hidden;
 	padding: 0;
 	/* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
+}
+@media screen and (max-width: 768px){
+    div.next_page button.btn{
+        width: 230px;
+    }
 }
 div.next_page button.btn:hover{
     color: #fff;

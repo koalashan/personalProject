@@ -6,6 +6,7 @@ header#header{
     background-color: #fff;
     opacity: .9;
     box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
+    position: sticky;
 }
 @media screen and (max-width: 576px){
     header#header{
@@ -106,7 +107,6 @@ div#make{
 div#make div.title_make{
     /* border: 1px solid darkcyan; */
     text-align: center;
-    margin-top: 100px;
 }
 div#make div.title_make > h2{
     font-size: 1.8rem;
@@ -115,6 +115,11 @@ div#make div.title_make > h2{
     display: inline-block;
     font-weight: 300;
     line-height: 1.8;
+}
+@media screen and (max-width: 768px){
+    div#make div.title_make > h2{
+        font-size: 1.7rem;
+    }
 }
 @media screen and (max-width: 500px){
     div#make div.title_make > h2{
@@ -141,6 +146,11 @@ div#make div.wrap div.make{
     display: flex;
     /* margin: 0 15px; */
     flex-direction: column;
+}
+@media screen and (max-width: 768px){
+    div#make div.wrap div.make{
+        min-width: 50%;
+    }
 }
 div#make div.wrap div.arrow{
     /* border: 1px solid salmon; */
@@ -282,7 +292,7 @@ div#browse div.wrap div.directional_nav{
     width: 95%;
     /* max-width: 940px; */
     position: relative;
-    top: -430px;
+    top: -400px;
     display: flex;
     justify-content: space-between;
 }
@@ -415,6 +425,11 @@ div#para_area{
         width: 95%;
     }
 }
+@media screen and (max-width: 400px){
+    div#para_area{
+        width: 85%;
+    }
+}
 div#para_area div.para{
     /* border: 1px solid red; */
     width: 45%;
@@ -485,6 +500,17 @@ div#para_area div.para p.main_para{
         /* text-align: center; */
     }
 }
+@media screen and (max-width: 400px){
+    div#para_area div.para p.main_para{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 350px){
+    div#para_area div.para p.main_para{
+        width: 300px;
+        font-size: 1.4rem;
+    }
+}
 div#para_area div.img_area{
     /* border: 1px solid blue; */
     display: inline-block;
@@ -547,6 +573,13 @@ div#para_area div.img_area img.sentence_img{
 @media screen and (max-width: 1100px){
     div#para_area div.img_area img.sentence_img{
         max-width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    div#para_area div.img_area img.sentence_img{
+        max-width: 100%;
+        margin: 0;
+        margin-top: 10px;
     }
 }
 div#comment{
@@ -648,6 +681,11 @@ div#comment div.card{
         width: 380px;
     }
 }
+@media screen and (max-width: 400px){
+    div#comment div.card {
+        width: 330px;
+    }
+}
 div#comment div.card div.wrap{
     /* border: 1px solid black; */
     padding: 45px 0;
@@ -723,6 +761,11 @@ div.bt_make button.btn{
 	overflow: hidden;
 	padding: 0;
 	/* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
+}
+@media screen and (max-width: 768px){
+    div.bt_make button.btn{
+        width: 230px;
+    }
 }
 div.bt_make button.btn:hover{
     color: #fff;

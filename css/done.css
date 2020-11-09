@@ -6,6 +6,7 @@ header#header{
     background-color: #fff;
     opacity: .9;
     box-shadow: 4px 3px 24px -16px hsla(60, 0%, 20%, .4);
+    position: sticky;
 }
 @media screen and (max-width: 576px){
     header#header{
@@ -88,9 +89,7 @@ div#top{
 div#top div.title_wrap{
     /* border: 1px solid cyan; */
     width: 75%;
-    margin: 0 auto;
-    /* text-align: center; */
-    padding-top: 210px;
+    margin: 80px auto;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -470,6 +469,11 @@ div.bt_make button.btn{
 	overflow: hidden;
 	padding: 0;
 	/* box-shadow: -1px 4px 74px -16px rgba(0, 0, 0, .3); */
+}
+@media screen and (max-width: 768px){
+    div.bt_make button.btn{
+        width: 230px;
+    }
 }
 div.bt_make button.btn:hover{
     color: #fff;
