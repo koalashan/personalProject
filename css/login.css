@@ -33,7 +33,7 @@ div.wrapper{
     }
 }
 div.wrapper div.logo > a{
-    background-image: url("../../images/logo_g_143x54.svg");
+    background-image: url("../images/logo_g_143x54.svg");
     transform: scale(.8);
 }
 div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
