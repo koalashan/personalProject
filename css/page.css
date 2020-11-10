@@ -419,9 +419,14 @@ div#main_content div.list_wrap div.list{
 }
 @media screen and (max-width: 850px){
     div#main_content div.list_wrap div.list{
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 40px;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 370px){
+    div#main_content div.list_wrap div.list{
+        min-width: 275px;
     }
 }
 div#main_content div.list_wrap div.list ul.list{

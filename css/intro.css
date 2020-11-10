@@ -21,7 +21,7 @@ header#header div.wrapper nav#nav div#menu_toggle ul.nav > li:nth-child(1) > a::
     height: 6px;
 }
 div.wrapper div.logo > a{
-    background-image: url("../../images/logo_g_143x54.svg");
+    background-image: url("../images/logo_g_143x54.svg");
 }
 div.wrapper nav#nav div#menu_toggle ul.nav > li > a, div.wrapper nav#nav div#menu_toggle ul.nav > li > span{
     color: #9e9e9e;
@@ -478,7 +478,7 @@ div#para_area div.para p.main_para{
     color: hsla(57, 9%, 61%, 1);
     display: inline-block;
     letter-spacing: 0.1em;
-    line-height: 1.7;
+    line-height: 1.8;
     margin: 10% 0 0 15%;
     width: 380px;
 }
